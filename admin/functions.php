@@ -23,7 +23,7 @@ function delete($table, $id)
 function queryone($table, $id, $target)
 {
     global $conn;
-    return mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM `$table` WHERE `id_barang` = '$id'"))["$target"];
+    return mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM `$table` WHERE `id_barang` = '$id'"))[$target];
 }
 
 function update($table, $id, $data)
@@ -32,4 +32,32 @@ function update($table, $id, $data)
     mysqli_query($conn, "UPDATE `$table` SET `nama_barang` = '$data[nama_barang]', `harga_barang` = '$data[harga_barang]', `stok_barang`= '$data[stok_barang]'
     where `id_barang` = '$id'");
     header('location:index.php');
+}
+
+function deRupiah($value)
+{
+    $value = $value;
+    $value_str = preg_replace("/[^0-9]/", "", $value);
+    $value_int = (int) $value_str;
+    return $value_int;
+}
+
+function rupiah($angka)
+{
+    $hasil_rupiah = "Rp " . number_format($angka, 0, ',', '.');
+    return $hasil_rupiah;
+}
+
+function rp($angka)
+{
+    $hasil_rupiah = number_format($angka, 0, ',', '.');
+    return $hasil_rupiah;
+}
+
+function tgl_indo($tgl)
+{
+    $tanggal = substr($tgl, 8, 2);
+    $bulan = substr($tgl, 5, 2);
+    $tahun = substr($tgl, 0, 4);
+    return $tanggal . '-' . $bulan . '-' . $tahun;
 }

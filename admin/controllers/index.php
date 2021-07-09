@@ -12,16 +12,16 @@
     <h1>Home</h1>
     <table width="100%" border=1>
         <tr>
-            <td>
+            <td valign="top">
                 <?php include "add.php" ?>
 
             </td>
-            <td rowspan="2">
+            <td rowspan="2" valign="top">
                 <?php include "view.php" ?>
             </td>
         </tr>
         <tr>
-            <td>
+            <td valign="top">
                 <?php include "update.php" ?>
             </td>
         </tr>

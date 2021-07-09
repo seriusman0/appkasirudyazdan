@@ -15,7 +15,7 @@ if (isset($_POST['tambah'])) {
 </head>
 
 <body>
-    <h1>Tambah barang</h1>
+    <h1>Tambah Barang</h1>
     <form action="" method="POST">
         <div class="form-group-row">
             <label for="id_barang">ID BARANG : </label>
