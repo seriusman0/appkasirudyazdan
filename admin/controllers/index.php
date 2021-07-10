@@ -9,8 +9,10 @@
 </head>
 
 <body>
-    <h1>Home</h1>
-    <table width="100%" border=1>
+    <center>
+        <h1 valign="top">Admin Aplikasi Kasir UD Yazdan</h1>
+    </center>
+    <table width="100%">
         <tr>
             <td valign="top">
                 <?php include "add.php" ?>
@@ -21,9 +23,6 @@
             </td>
         </tr>
         <tr>
-            <td valign="top">
-                <?php include "update.php" ?>
-            </td>
         </tr>
     </table>
 </body>

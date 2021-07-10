@@ -10,7 +10,7 @@
 
 <body>
     <h1>Daftar Barang</h1>
-    <table border="1">
+    <table border="1" class="border--round table--alternate-row">
         <thead>
             <tr>
                 <td align="center">No</td>

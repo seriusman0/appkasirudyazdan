@@ -1,6 +1,8 @@
 <?php
+error_reporting();
 include "../conf/config.php";
 include "../admin/functions.php";
+
 
 $id = $_GET['id'];
 $r = mysqli_query($conn, "SELECT tb_payment.update_at, tb_barang.nama_barang, tb_barang.harga_barang, tb_history.jumlah, tb_payment.total_bayar 

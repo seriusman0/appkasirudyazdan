@@ -47,7 +47,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class='btn' href='cart_delete.php?id=$r[id_barang]'>Delete</a>
+                    <a class='btn' href='delete_cart.php?id=$r[id_cart]'>Delete</a>
                 </td>
                 </tr>";
             $no++;

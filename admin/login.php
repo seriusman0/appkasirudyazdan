@@ -49,13 +49,6 @@ if (isset($_POST['login'])) {
 </head>
 
 <body>
-    <!-- <h1>LOGIN PAGE</h1>
-    <form action="" method="post">
-        <input type="text" placeholder="username" autofocus name="username" autocomplete="off">
-        <input type="password" placeholder="password" name="password" autocomplete="off">
-        <input type="submit" name="login" value="Login">
-    </form> -->
-
     <div class="main-container">
         <section class="height-100 imagebg text-center" data-overlay="4">
             <div class="background-image-holder">
@@ -71,7 +64,7 @@ if (isset($_POST['login'])) {
                         <form method="post">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <input type="text" name="username" placeholder="Username" />
+                                    <input type="text" name="username" placeholder="Username" autofocus />
                                 </div>
                                 <div class="col-md-12">
                                     <input type="password" name="password" placeholder="Password" />
