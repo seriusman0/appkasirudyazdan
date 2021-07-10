@@ -50,7 +50,7 @@ include "../admin/functions.php";
             <!--end of row-->
         </div>
         <!--end of container-->
-    </div>
+    </div val>
     <!--end of bar-->
     <center>
         <h1>APLIKASI KASIR UD YAZDAN</h1>
@@ -68,7 +68,7 @@ include "../admin/functions.php";
             <th colspan="2">Keranjang</th>
         </tr>
         <tr>
-            <td colspan="2">
+            <td colspan="2" valign="top">
                 <?php include "cart.php" ?>
             </td>
         </tr>
@@ -77,7 +77,7 @@ include "../admin/functions.php";
             <th>Struk</th>
         </tr>
         <tr>
-            <td><?php include "history.php" ?></td>
+            <td valign="top"><?php include "history.php" ?></td>
             <td valign="top" rowspan="2"><?php include "payment_history.php" ?></td>
         </tr>
 

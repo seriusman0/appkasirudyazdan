@@ -30,8 +30,9 @@
 
 <body>
     <h1>Scan Barcode</h1>
-    <form action="" method="post"><input type="text" name="barcode" autofocus placeholder="Scan Di sini">
-        <input type="submit" name="submit" value="Tambah" autocomplete="off">
+    <form action="" method="post">
+        <input type="text" name="barcode" autofocus placeholder="Scan Di sini" autocomplete="off">
+        <input type="submit" name="submit" value="Tambah">
     </form>
 </body>
 

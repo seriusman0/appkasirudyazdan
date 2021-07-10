@@ -35,6 +35,9 @@
                                 <a href="index.php?page=user">User</a>
                             </li>
                             <li>
+                                <a href="index.php?page=data_transaksi">Data Transaksi</a>
+                            </li>
+                            <li>
                                 <a href="logout.php">Logout</a>
                             </li>
                         </ul>
@@ -69,6 +72,11 @@
         include "Users/edit.php";
     } elseif ($_GET['page'] == 'delete_user') {
         include "Users/delete.php";
+    }
+
+    // datatransaksi
+    elseif ($_GET['page'] == 'data_transaksi') {
+        include "datatransaksi/index.php";
     }
     ?>
 

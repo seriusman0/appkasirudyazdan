@@ -27,6 +27,14 @@ if (isset($_POST['pay'])) {
                     }
                 }
             } else {
+                echo "  <div class='alert alert-danger role='alert'>
+                        <div class='alert__body'>
+                            <span> Transaksi Gagal </span>
+                        </div>
+                        <div class='alert__close'>
+                            ×
+                        </div>
+                    </div>";
             };
         } else {
             $minus = $tagihan - $_POST['bayar'];

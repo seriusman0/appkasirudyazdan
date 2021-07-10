@@ -20,7 +20,7 @@ if (isset($_POST['tambah'])) {
         <div class="form-group-row">
             <label for="id_barang">ID BARANG : </label>
             <div class="col-sm-10">
-                <input required type="text" class="form-control-plaintext border border-warning progress-bar text-dark" name="id_barang" autofocus>
+                <input required type="text" class="form-control-plaintext border border-warning progress-bar text-dark" name="id_barang" autocomplete="off" autofocus>
             </div>
         </div>
         <div>
