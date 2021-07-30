@@ -1,7 +1,11 @@
 <?php
 if (isset($_POST['tambah'])) {
     // var_dump($_POST);
-    insert("tb_barang", $_POST);
+    if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM `tb_barang` WHERE `id_barang` = '$_POST[id_barang]'")) > 0) {
+        mysqli_query($conn, "UPDATE `tb_barang` SET `stok_barang`= (`stok_barang` + '$_POST[stok_barang]'), created_at = CURRENT_TIMESTAMP
+    where `id_barang` = '$_POST[id_barang]'");
+        header('location:index.php');
+    } else insert("tb_barang", $_POST);
 }
 ?>
 <!DOCTYPE html>

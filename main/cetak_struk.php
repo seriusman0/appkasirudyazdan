@@ -31,7 +31,7 @@ $data = mysqli_fetch_array(mysqli_query($conn, "SELECT tb_payment.pembeli, tb_pa
                 </tr>
                 <tr>
                     <td colspan="5" align="center">
-                        STRUK TRANSAKSI TOKO UD YAZDAN
+                        STRUK TRANSAKSI UD YAZDAN
                     </td>
                 </tr>
                 <tr>
@@ -91,6 +91,12 @@ $data = mysqli_fetch_array(mysqli_query($conn, "SELECT tb_payment.pembeli, tb_pa
                 <tr height="20"></tr>
                 <tr>
                     <td colspan="5" align="center">TERIMAKASIH TELAH BERBELANJA</td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center">Barang yang sudah di beli tidak boleh</td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center">ditukar atau dikembalikan</td>
                 </tr>
                 <tr>
                     <td colspan="5" align="center">--UD YAZDAN--</td>
