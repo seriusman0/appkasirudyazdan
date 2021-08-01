@@ -53,7 +53,7 @@ $data = mysqli_fetch_array(mysqli_query($conn, "SELECT tb_payment.pembeli, tb_pa
                 <tr height="10"></tr>
                 <?php
                 $no = 1;
-                // $r = mysqli_query($conn, "SELECT * FROM tb_history, tb_barang WHERE id_payment = '$id' and tb_history.id_barang = tb_barang.id_barang");
+                $r = mysqli_query($conn, "SELECT * FROM tb_history, tb_barang WHERE id_payment = '$id' and tb_history.id_barang = tb_barang.id_barang");
                 while ($row = mysqli_fetch_array($r)) {
                     echo "
                 <tr>
