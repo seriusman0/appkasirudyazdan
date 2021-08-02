@@ -26,9 +26,13 @@ $data = mysqli_fetch_array(mysqli_query($conn, "SELECT tb_payment.pembeli, tb_pa
             <table class="rincian" padding="">
                 <tr>
                     <td colspan="5">
-                        <img src="../img/CoP.png">
+                        <p>
+                        <h1 align="center" style="font-size:60px; line-height:2px">UD YAZDAN</h1>
+                        <h4 align="center">MELAYANI DENGAN HATI</h4>
+                        </p>
                     </td>
                 </tr>
+
                 <tr>
                     <td colspan="5" align="center">
                         STRUK TRANSAKSI UD YAZDAN
