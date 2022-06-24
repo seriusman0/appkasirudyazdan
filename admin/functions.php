@@ -2,6 +2,7 @@
 function query($table)
 {
     global $conn;
+
     return mysqli_query($conn, "SELECT * FROM $table ORDER BY `created_at` DESC");
 }
 

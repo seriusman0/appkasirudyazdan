@@ -38,6 +38,9 @@
                                 <a href="index.php?page=data_transaksi">Data Transaksi</a>
                             </li>
                             <li>
+                                <a href="index.php?page=pelanggan">Pelanggan</a>
+                            </li>
+                            <li>
                                 <a href="logout.php">Logout</a>
                             </li>
                         </ul>
@@ -72,6 +75,18 @@
         include "Users/edit.php";
     } elseif ($_GET['page'] == 'delete_user') {
         include "Users/delete.php";
+    }
+
+
+    //pelanggan
+    elseif ($_GET['page'] == 'pelanggan') {
+        include "pelanggan/index.php";
+    } elseif ($_GET['page'] == 'add_pelanggan') {
+        include "pelanggan/add.php";
+    } elseif ($_GET['page'] == 'edit_pelanggan') {
+        include "pelanggan/edit.php";
+    } elseif ($_GET['page'] == 'delete_pelanggan') {
+        include "pelanggan/delete.php";
     }
 
     // datatransaksi
