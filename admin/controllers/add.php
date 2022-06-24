@@ -1,11 +1,12 @@
 <?php
 if (isset($_POST['tambah'])) {
-    // var_dump($_POST);
+    $namaBarang = $_POST['nama_barang'];
     if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM `tb_barang` WHERE `id_barang` = '$_POST[id_barang]'")) > 0) {
         mysqli_query($conn, "UPDATE `tb_barang` SET `stok_barang`= (`stok_barang` + '$_POST[stok_barang]'), created_at = CURRENT_TIMESTAMP
     where `id_barang` = '$_POST[id_barang]'");
     } else insert("tb_barang", $_POST);
-    $_POST['harga_barang'] = (int) filter_var($_POST['harga_barang'], FILTER_SANITIZE_NUMBER_INT);;
+    $_POST['harga_barang'] = (int) filter_var($_POST['harga_barang'], FILTER_SANITIZE_NUMBER_INT);
+
     mysqli_query($conn, "INSERT INTO `tb_barang` (`id_barang`, `nama_barang`,`modal_barang`, `harga_barang`, `stok_barang`, `created_at`) values(
         '$_POST[id_barang]', '$_POST[nama_barang]','$_POST[modal_barang]','$_POST[harga_barang]','$_POST[stok_barang]', CURRENT_TIMESTAMP
     )");
@@ -33,7 +34,7 @@ if (isset($_POST['tambah'])) {
         <div>
             <label for="nama_barang">Nama Barang : </label>
             <div class="col-sm-10">
-                <input required type="text" class="form-control-plaintext border border-warning progress-bar text-dark" name="nama_barang" <?= (isset($_POST["nama_barang"]) ? ("value=" . $_POST['nama_barang'] . "") : "") ?>>
+                <input required type="text" class="form-control-plaintext border border-warning progress-bar text-dark" name="nama_barang" value='<?= $namaBarang ?>'>
             </div>
         </div>
         <div>

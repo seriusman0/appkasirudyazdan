@@ -19,10 +19,7 @@
             <div class='modal-content'>
                 <form action='index.php?page=add_pelanggan' method='post'>
                     <input type='text' placeholder='Nama' name='nama_pelanggan' required>
-                    <input type='text' placeholder='No HP' name='nohp_pelanggan' required>
-                    <input type='text' placeholder='pelanggan name' name='username' required>
-                    <input type='password' placeholder='Password' name='password' required>
-                    <input type='submit' name='add_pelanggan' value='Tambah'>
+                    <input type='submit' name='add_pelanggan' value='Tambah Pelanggan'>
                 </form>
             </div>
         </div>
@@ -53,7 +50,7 @@
                         <div class='modal-content'>
                             <form action='index.php?page=edit_pelanggan&id=$r[id_pelanggan]' method='post'>
                                 <input type='text'  name='nama_pelanggan' value='$r[nama_pelanggan]' required>
-                                <input type='submit' name='edit_user' value='Tambah'>
+                                <input type='submit' name='edit_pelanggan' value='Edit Pelanggan'>
                             </form>
                         </div>
                     </div>

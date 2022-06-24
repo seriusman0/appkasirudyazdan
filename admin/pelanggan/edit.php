@@ -1,10 +1,7 @@
 <?php
-if (isset($_POST['edit_user'])) {
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    mysqli_query($conn, "UPDATE tb_user SET 
-    `nama_user` = '$_POST[nama_user]', 
-    `nohp_user` = '$_POST[nohp_user]', 
-    `username` = '$_POST[username]', 
-    `password` = '$password' where id_user = '$_GET[id]'");
-    header('Location:index.php?page=user');
+if (isset($_POST['edit_pelanggan'])) {
+    mysqli_query($conn, "UPDATE pelanggan SET 
+    `nama_pelanggan` = '$_POST[nama_pelanggan]' 
+    where id_pelanggan = '$_GET[id]'");
+    header('Location:index.php?page=pelanggan');
 }

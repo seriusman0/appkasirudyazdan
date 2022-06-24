@@ -6,7 +6,7 @@ if (isset($_POST['pay'])) {
 
         if ($_POST["bayar"] >= $tagihan) {
             $sisa = intval($_POST['bayar']) - $tagihan;
-            echo "  <div class='alert alert-danger role='alert'>
+            echo "<div class='alert alert-danger role='alert'>
                         <div class='alert__body'>
                             <span> Uang Kembali " . rupiah($sisa) . "</span>
                         </div>
@@ -71,7 +71,12 @@ if (isset($_POST['pay'])) {
     <form action="" method="POST">
         <div>
             <label for="penjual">Nama Penjual : </label>
-            <input type="text" name="penjual" required>
+            <select name="penjual" id="penjual">
+                <option value="Yuniman Waruwu">Yuniman Waruwu</option>
+                <option value="Eka Krisman Gulo">Eka Krisman Gulo</option>
+                <option value="Vivin Gulo">Vivin Gulo</option>
+                <option value="Tiara Gulo">Tiara Gulo</option>
+            </select>
         </div>
         <div>
             <label for="pembeli">Nama Pembeli : </label>
@@ -83,6 +88,7 @@ if (isset($_POST['pay'])) {
         </div>
 
         <input type="submit" name="pay" value="Bayar">
+        <input type="submit" name="hutang" class="bg-danger" value="Tambahkan Ke Buku Hutang">
     </form>
 </body>
 
