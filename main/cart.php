@@ -56,7 +56,8 @@
 
         <tr>
             <th colspan="5" align="right">Total</th>
-            <th colspan="2"><?= rupiah(mysqli_fetch_assoc(mysqli_query($conn, "SELECT SUM(tb_barang.harga_barang*tb_cart.jumlah)as total FROM tb_barang, tb_cart WHERE tb_barang.id_barang = tb_cart.id_barang"))['total']) ?></th>
+            <th colspan="2">
+                <?= rupiah(mysqli_fetch_assoc(mysqli_query($conn, "SELECT SUM(tb_barang.harga_barang*tb_cart.jumlah)as total FROM tb_barang, tb_cart WHERE tb_barang.id_barang = tb_cart.id_barang"))['total']) ?></th>
         </tr>
 
     </table>
