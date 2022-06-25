@@ -44,6 +44,12 @@
                                 <a href="index.php?page=hutang">Hutang</a>
                             </li>
                             <li>
+                                <a href="index.php?page=buku_hutang">Buku Hutang</a>
+                            </li>
+                            <li>
+                                <a href="index.php?page=pembayaran_hutang">Pembayaran Hutang</a>
+                            </li>
+                            <li>
                                 <a href="logout.php">Logout</a>
                             </li>
                         </ul>
@@ -91,7 +97,7 @@
         include "pelanggan/delete.php";
     }
 
-    //pelanggan
+    //hutang
     elseif ($_GET['page'] == 'hutang') {
         include "hutang/index.php";
     } elseif ($_GET['page'] == 'add_hutang') {
@@ -101,6 +107,34 @@
     } elseif ($_GET['page'] == 'delete_hutang') {
         include "hutang/delete.php";
     }
+
+    //buku_hutang
+    elseif ($_GET['page'] == 'buku_hutang') {
+        include "buku_hutang/index.php";
+    } elseif ($_GET['page'] == 'add_buku_hutang') {
+        include "buku_hutang/add.php";
+    } elseif ($_GET['page'] == 'edit_buku_hutang') {
+        include "buku_hutang/edit.php";
+    } elseif ($_GET['page'] == 'delete_buku_hutang') {
+        include "buku_hutang/delete.php";
+    }
+
+    //pembayaran_hutang
+    elseif ($_GET['page'] == 'pembayaran_hutang') {
+        include "pembayaran_hutang/index.php";
+    } elseif ($_GET['page'] == 'add_pembayaran_hutang') {
+        include "pembayaran_hutang/add_pembayaran_hutang.php";
+    } elseif ($_GET['page'] == 'edit_pembayaran_hutang') {
+        include "pembayaran_hutang/edit_pembayaran_hutang.php";
+    } elseif ($_GET['page'] == 'delete_pembayaran_hutang') {
+        include "pembayaran_hutang/delete_pembayaran_hutang.php";
+    }
+
+    //lunas
+    elseif ($_GET['page'] == 'lunas_pembayaran_hutang') {
+        include "pembayaran_hutang/lunas_pembayaran_hutang.php";
+    }
+
 
     // datatransaksi
     elseif ($_GET['page'] == 'data_transaksi') {
