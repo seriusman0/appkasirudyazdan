@@ -27,20 +27,15 @@ $data = mysqli_fetch_array(mysqli_query($conn, "SELECT tb_payment.pembeli, tb_pa
                 <tr>
                     <td colspan="5">
                         <p>
-                        <h1 align="center" style="font-size:60px; line-height:2px">UD YAZDAN</h1>
-                        <h4 align="center">MELAYANI DENGAN HATI</h4>
+                        <h1 align="center" style="font-size:30px; line-height:2px">Kantin Kejujuran</h1>
+                        <h4 align="center">BROSIS HOUSE KETINTANG</h4>
                         </p>
                     </td>
                 </tr>
 
                 <tr>
                     <td colspan="5" align="center">
-                        STRUK TRANSAKSI UD YAZDAN
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="5" align="center">
-                        DESA LAHEMO KECAMATAN GIDO
+                        STRUK TRANSAKSI KANTIN KEJUJURAN
                     </td>
                 </tr>
                 <tr height="10"></tr>
@@ -97,16 +92,10 @@ $data = mysqli_fetch_array(mysqli_query($conn, "SELECT tb_payment.pembeli, tb_pa
                     <td colspan="5" align="center">TERIMAKASIH TELAH BERBELANJA</td>
                 </tr>
                 <tr>
-                    <td colspan="5" align="center">Barang yang sudah di beli tidak boleh</td>
+                    <td colspan="5" align="center">--Kantin Kejujuran--</td>
                 </tr>
                 <tr>
-                    <td colspan="5" align="center">ditukar atau dikembalikan</td>
-                </tr>
-                <tr>
-                    <td colspan="5" align="center">--UD YAZDAN--</td>
-                </tr>
-                <tr>
-                    <td colspan="5" align="center">+62 822-4636-3510</td>
+                    <td colspan="5" align="center">+62 853-3785-4860</td>
                 </tr>
             </table>
 

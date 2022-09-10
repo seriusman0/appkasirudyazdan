@@ -10,7 +10,7 @@
 
 <body>
     <center>
-        <h1 valign="top">Admin Aplikasi Kasir UD Yazdan</h1>
+        <h1 valign="top">Admin Aplikasi Kasir Kantin Kejujuran</h1>
     </center>
     <table width="100%">
         <tr>

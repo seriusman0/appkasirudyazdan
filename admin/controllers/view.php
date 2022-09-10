@@ -16,7 +16,6 @@
                 <td align="center">No</td>
                 <td align="center">ID Barang</td>
                 <td align="center">Nama Barang</td>
-                <td align="center">Modal </td>
                 <td align="center">Harga </td>
                 <td align="center">Stok </td>
                 <td align="center">Action</td>
@@ -33,7 +32,6 @@
                 <td align='center'>{$no}</td>
                             <td>$r[id_barang]</td>
                             <td>$r[nama_barang]</td>
-                            <td align='right'>" . rp($r["modal_barang"]) . "</td>
                             <td align='right'>" . rp($r["harga_barang"]) . "</td>
                             <td align='center'>$r[stok_barang]</td>
                             <td><a href='index.php?page=update&id={$r['id_barang']}'>Edit</a>

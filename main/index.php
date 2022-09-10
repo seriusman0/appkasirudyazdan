@@ -19,7 +19,7 @@ include "../admin/functions.php";
     <link href="../css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../css/custom.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../css/font-rubiklato.css" rel="stylesheet" type="text/css" media="all" />
-    <title>UD Yazdan</title>
+    <title>Kantin Kejujuran</title>
 </head>
 
 <body>
@@ -53,7 +53,7 @@ include "../admin/functions.php";
     </div val>
     <!--end of bar-->
     <center>
-        <h1>APLIKASI KASIR UD YAZDAN</h1>
+        <h1>Kasir Kantin Kejujuran</h1>
     </center>
     <table class="border--round">
         <tr>

@@ -31,7 +31,7 @@
                             <li>
                                 <a href="../main/index.php">Transaksi</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="index.php?page=user">User</a>
                             </li>
                             <li>
@@ -48,7 +48,7 @@
                             </li>
                             <li>
                                 <a href="index.php?page=pembayaran_hutang">Pembayaran Hutang</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="logout.php">Logout</a>
                             </li>

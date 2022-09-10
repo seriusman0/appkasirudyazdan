@@ -7,8 +7,8 @@ if (isset($_POST['tambah'])) {
     } else insert("tb_barang", $_POST);
     $_POST['harga_barang'] = (int) filter_var($_POST['harga_barang'], FILTER_SANITIZE_NUMBER_INT);
 
-    mysqli_query($conn, "INSERT INTO `tb_barang` (`id_barang`, `nama_barang`,`modal_barang`, `harga_barang`, `stok_barang`, `created_at`) values(
-        '$_POST[id_barang]', '$_POST[nama_barang]','$_POST[modal_barang]','$_POST[harga_barang]','$_POST[stok_barang]', CURRENT_TIMESTAMP
+    mysqli_query($conn, "INSERT INTO `tb_barang` (`id_barang`, `nama_barang`, `harga_barang`, `stok_barang`, `created_at`) values(
+        '$_POST[id_barang]', '$_POST[nama_barang]','$_POST[harga_barang]','$_POST[stok_barang]', CURRENT_TIMESTAMP
     )");
 }
 ?>
@@ -38,26 +38,19 @@ if (isset($_POST['tambah'])) {
             </div>
         </div>
         <div>
-            <label for="harga">Harga Modal : </label>
+            <label for="harga">Harga Barang: </label>
             <div class="col-sm-10">
-                <input required type="number" class=" form-control-plaintext border border-warning progress-bar text-dark" name="modal_barang" <?= (isset($_POST["modal_barang"]) ? ("value=" . $_POST['modal_barang'] . "") : "") ?>>
+                <input required type="text" id="rupiah" class=" form-control-plaintext border border-warning progress-bar text-dark" name="harga_barang" <?= (isset($_POST["harga_barang"]) ? ("value=" . $_POST['harga_barang'] . "") : "") ?>>
             </div>
         </div>
         <div>
-            <div>
-                <label for="harga">Harga Jual : </label>
-                <div class="col-sm-10">
-                    <input required type="text" id="rupiah" class=" form-control-plaintext border border-warning progress-bar text-dark" name="harga_barang" <?= (isset($_POST["harga_barang"]) ? ("value=" . $_POST['harga_barang'] . "") : "") ?>>
-                </div>
+            <label for="stok">Stok : </label>
+            <div class="col-sm-10">
+                <input required type="number" class="form-control-plaintext border border-warning progress-bar text-dark" name="stok_barang" <?= (isset($_POST["stok_barang"]) ? ("value=" . $_POST['stok_barang'] . "") : "1") ?>>
             </div>
-            <div>
-                <label for="stok">Stok : </label>
-                <div class="col-sm-10">
-                    <input required type="number" class="form-control-plaintext border border-warning progress-bar text-dark" name="stok_barang" <?= (isset($_POST["stok_barang"]) ? ("value=" . $_POST['stok_barang'] . "") : "1") ?>>
-                </div>
-            </div>
-            <br>
-            <input type="submit" class="fas fa-shopping-cart btn btn-warning btn-lg btn-block" name="tambah" value="Tambah">
+        </div>
+        <br>
+        <input type="submit" class="fas fa-shopping-cart btn btn-warning btn-lg btn-block" name="tambah" value="Tambah">
     </form>
     <script type="text/javascript">
         var rupiah = document.getElementById('rupiah');

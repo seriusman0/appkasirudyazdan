@@ -70,15 +70,6 @@ if (isset($_POST['pay'])) {
 <body>
     <form action="" method="POST">
         <div>
-            <label for="penjual">Nama Penjual : </label>
-            <select name="penjual" id="penjual">
-                <option value="Yuniman Waruwu">Yuniman Waruwu</option>
-                <option value="Eka Krisman Gulo">Eka Krisman Gulo</option>
-                <option value="Vivin Gulo">Vivin Gulo</option>
-                <option value="Tiara Gulo">Tiara Gulo</option>
-            </select>
-        </div>
-        <div>
             <label for="pembeli">Nama Pembeli : </label>
             <input type="text" name="pembeli" required>
         </div>
@@ -86,9 +77,7 @@ if (isset($_POST['pay'])) {
             <label for="bayar">Bayar : </label>
             <input type="number" name="bayar" required>
         </div>
-
         <input type="submit" name="pay" value="Bayar">
-        <input type="submit" name="hutang" class="bg-danger" value="Tambahkan Ke Buku Hutang">
     </form>
 </body>
 

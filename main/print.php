@@ -19,7 +19,7 @@ include "../admin/functions.php";
     <link href="../css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../css/custom.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../css/font-rubiklato.css" rel="stylesheet" type="text/css" media="all" />
-    <title>UD Yazdan</title>
+    <title>Kantin Kejujuran</title>
 </head>
 
 <body>

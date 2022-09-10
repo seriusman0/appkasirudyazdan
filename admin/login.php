@@ -45,21 +45,22 @@ if (isset($_POST['login'])) {
     <link href="../css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../css/custom.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../css/font-rubiklato.css" rel="stylesheet" type="text/css" media="all" />
-    <title>Admin Kasir UD Yazdan</title>
+    <title>Admin Kasir Kantin Kejujuran</title>
 </head>
 
 <body>
     <div class="main-container">
         <section class="height-100 imagebg text-center" data-overlay="4">
+
             <div class="background-image-holder">
-                <img alt="background" src="../img/ud_yazdan.jpg" />
+                <!-- Letakkan file sumber background -->
             </div>
             <div class="container pos-vertical-center">
                 <div class="row">
                     <div class="col-md-7 col-lg-5">
                         <h2>Login to continue</h2>
                         <p class="lead">
-                            Selamat Datang, silakan masuk menggunakan akun yang telah terdaftar dalam sistem Kasir UD Yazdan
+                            Selamat Datang, silakan masuk menggunakan akun yang telah terdaftar dalam sistem Kasir Kantin Kejujuran
                         </p>
                         <form method="post">
                             <div class="row">
