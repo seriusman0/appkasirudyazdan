@@ -4,7 +4,7 @@
 include "../conf/config.php";
 
 // $id_payment = $_POST['id_payment'];
-$id_payment = 27;
+$id_payment = $_GET['id_payment'];
 
 function totalTagihan($id_payment)
 {
